@@ -3,7 +3,8 @@ provider "aws" {
 }
 
 variable "vpc_name" {
-    name = "firstvpc"
+    type = string
+    default = "firstvpc"
 }
 
 resource "aws_vpc" "test" {
